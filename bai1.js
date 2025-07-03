@@ -11,8 +11,7 @@
  */
 
 let btnTong_luong = document.getElementById("tongLuong");
-btnTong_luong.onclick = function (event) {
-  event.preventDefault();
+btnTong_luong.onclick = function () {
   let luong = document.getElementById("txtLuong").value;
   let soNgay = document.getElementById("txtNgay").value;
   let tongLuong = luong * soNgay;
