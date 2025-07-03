@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h2 class="text-center font-bold text-2xl">Bài 1</h2>
+    <form class="max-w-sm mx-auto">
+      <div class="mb-5">
+        <label
+          for="txtLuong"
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >Lương</label
+        >
+        <input
+          type="number"
+          id="txtLuong"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Nhập lương"
+          value=""
+          required
+        />
+      </div>
+      <div class="mb-5">
+        <label
+          for="txtNgay"
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >Số Ngày</label
+        >
+        <input
+          type="number"
+          id="txtNgay"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Nhập số ngày"
+          value=""
+          required
+        />
+      </div>
+
+      <button
+        id="tongLuong"
+        type="submit"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      >
+        Tính tiền lương
+      </button>
+      <div
+        class="rounded-md w-sm h-24 bg-blue-700 my-4 text-white text-center py-6"
+        id="divInfo"
+      ></div>
+    </form>
+    <h1 class="text-center my-4 font-bold text-2xl">Bài 2</h1>
+    <!-- <input id="txtLuong" placeholder="luong" value="" />
+    <input id="txtNgay" placeholder="ngay" value="" />
+    <button id="tongLuong">Luong</button>
+    <div id="divInfo"></div> -->
+
+    <form class="max-w-sm mx-auto">
+      <div class="mb-5">
+        <input
+          type="number"
+          id="txtGiatri1"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Nhập số thứ 1"
+          value=""
+          required
+        />
+      </div>
+      <div class="mb-5">
+        <input
+          type="number"
+          id="txtGiatri2"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Nhập số thứ 2"
+          value=""
+          required
+        />
+      </div>
+      <div class="mb-5">
+        <input
+          type="number"
+          id="txtGiatri3"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Nhập số thứ 3"
+          value=""
+          required
+        />
+      </div>
+      <div class="mb-5">
+        <input
+          type="number"
+          id="txtGiatri4"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Nhập số thứ 4"
+          value=""
+          required
+        />
+      </div>
+      <div class="mb-5">
+        <input
+          type="number"
+          id="txtGiatri5"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Nhập số thứ 5"
+          value=""
+          required
+        />
+      </div>
+
+      <button
+        id="btnTongTrungBinh"
+        type="submit"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      >
+        Tính trung bình
+      </button>
+      <div
+        class="rounded-md w-sm h-24 bg-blue-700 my-4 text-white text-center py-6"
+        id="divTongTrungBinh"
+      ></div>
+    </form>
+    <!-- bài2 -->
+    <!-- <input id="txtGiatri1" placeholder="giaTri1" value="" />
+    <input id="txtGiatri2" placeholder="giaTri2" value="" />
+    <input id="txtGiatri3" placeholder="giaTri3" value="" />
+    <input id="txtGiatri4" placeholder="giaTri4" value="" />
+    <input id="txtGiatri5" placeholder="giaTri5" value="" />
+    <button id="btnTongTrungBinh">tinhTrungBinh</button>
+    <div id="divTongTrungBinh"></div> -->
+    <h2 class="text-center font-bold text-2xl">Bài 3</h2>
+    <form class="max-w-sm mx-auto">
+      <div class="mb-5">
+        <label
+          for="txtTien"
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >USD</label
+        >
+        <input
+          type="number"
+          id="txtTien"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Nhập số USD"
+          value=""
+          required
+        />
+      </div>
+
+      <button
+        id="btnQuySoTien"
+        type="submit"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      >
+        Quy đổi tiền
+      </button>
+      <div
+        class="rounded-md w-sm h-24 bg-blue-700 my-4 text-white text-center py-6"
+        id="divSoTien"
+      ></div>
+    </form>
+
+    <!-- bai 3 -->
+    <!-- <input id="txtTien" placeholder="Nhập số tiền" value="" />
+    <button id="btnQuySoTien">Quy Đổi Tiền</button>
+    <div id="divSoTien"></div> -->
+    <!-- bai 4 -->
+    <h3 class="text-center font-bold text-2xl">Bài 4</h3>
+    <form class="max-w-sm mx-auto">
+      <div class="mb-5">
+        <label
+          for="txtDai"
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >Chiều dài</label
+        >
+        <input
+          type="number"
+          id="txtDai"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Nhập chiều dài"
+          value=""
+          required
+        />
+      </div>
+      <div class="mb-5">
+        <label
+          for="txtRong"
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >Chiều Rộng</label
+        >
+        <input
+          type="number"
+          id="txtRong"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Nhập chiều rộng"
+          value=""
+          required
+        />
+      </div>
+
+      <button
+        id="btnTinh"
+        type="submit"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      >
+        Tính
+      </button>
+      <div
+        class="rounded-md w-sm h-24 bg-blue-700 my-4 text-white text-center py-6"
+        id="divDtCv"
+      ></div>
+    </form>
+    <!-- <input id="txtDai" placeholder="chiều dài" value="" />
+    <input id="txtRong" placeholder="chiều rộng" value="" />
+    <button id="btnTinh">Tính</button>
+    <div id="divDtCv"></div> -->
+    <h4 class="text-center font-bold text-2xl">Bài 5</h4>
+    <form class="max-w-sm mx-auto">
+      <div class="mb-5">
+        <label
+          for="txtNhapSo"
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >Nhập số</label
+        >
+        <input
+          type="number"
+          id="txtNhapSo"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder=""
+          value=""
+          required
+        />
+      </div>
+
+      <button
+        id="btnTinhTong"
+        type="submit"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      >
+        Tính tổng
+      </button>
+      <div
+        class="rounded-md w-sm h-24 bg-blue-700 my-4 text-white text-center py-6"
+        id="divTong"
+      ></div>
+    </form>
+
+    <!-- bài 5 -->
+    <!-- <input id="txtNhapSo" placeholder="Nhập số" value="" />
+    <button id="btnTinhTong">Tính Tổng</button>
+    <div id="divTong"></div> -->
+    <script src="./bai1.js"></script>
+    <script src="./bai2.js"></script>
+    <script src="./bai3.js"></script>
+    <script src="./bai4.js"></script>
+    <script src="./bai5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </body>
+</html>
